@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Final De JavaScript</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilo personalizado -->
+    <link rel="stylesheet" href="../CSS/estilo.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-primary">
+            <div class="container-lg">
+                <a class="navbar-brand text-white" href="https://campus.masterd.es/campusvirtual/loginform.jsp#@escuelainformatica">MasterD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="../index.html" class="alinks">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./productos.html" class="alinks">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./presupuesto.html" class="activo alinks">PRESUPUESTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contacto.html" class="alinks">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--MAIN-->
+    <main>
+        <section class="container-lg">
+            <h2 class="text-info text-center my-5 pt-4">FORMULARIO DE PRESUPUESTO</h2>
+            <form id="formulario" action="#" class="bg-white m-5 p-5 rounded shadow-lg">
+
+                <fieldset class="contacto">
+                    <legend>Datos de Contacto</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="15" placeholder="Escribre aqui tu nombre" required>
+                    <div id="errorNombre" class="error"></div>
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="40" placeholder="Escribre tus apellidos" required>
+                    <div id="errorApellidos" class="error"></div>
+
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" maxlength="9" placeholder="123456789" required>
+                    <div id="errorTelefono" class="error"></div>
+
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" id="email" name="email" maxlength="40" placeholder="asdf@gmail.com" required>
+                    <div id="errorEmail" class="error"></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Presupuesto</legend>
+
+                    <label for="producto">Productos:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="" disabled selected>-- Seleccione un producto --</option>
+                        <option value="producto1" data-precio="100">Producto 1 - 100€</option>
+                        <option value="producto2" data-precio="200">Producto 2 - 200€</option>
+                        <option value="producto3" data-precio="300">Producto 3 - 300€</option>
+                        <option value="producto4" data-precio="400">Producto 4 - 400€</option>
+                    </select>
+                    <div id="errorProducto" class="error"></div>
+
+                    <label for="plazo">Plazo (en meses o días):</label>
+                    <input type="number" id="plazo" name="plazo" min="1" max="12" value="1" required>
+                    <div id="errorPlazo" class="error"></div>
+
+                    
+                    <label>Extras:</label>
+                    <div class="extras">
+                        <input type="checkbox" id="extra1" name="extras" value="extra1" data-precio="20">
+                        <label for="extra1">Extra 1 (+20€)</label>
+                    </div>
+                    <div class="extras">
+                        <input type="checkbox" id="extra2" name="extras" value="extra2" data-precio="40">
+                        <label for="extra2">Extra 2 (+40€)</label>
+                    </div>
+                    <div class="extras">
+                        <input type="checkbox" id="extra3" name="extras" value="extra3" data-precio="60">
+                        <label for="extra3">Extra 3 (+60€)</label>
+                    </div>
+                    <div class="extras">
+                        <input type="checkbox" id="extra4" name="extras" value="extra4" data-precio="80">
+                        <label for="extra4">Extra 4 (+80€)</label>
+                    </div>
+
+                    <div id="presupuestoFinal">Presupuesto final: 0€</div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Aceptacion de condiciones y envio</legend>
+
+                    <label>
+                        <input type="checkbox" id="acepto" required>
+                        Acepto las condiciones de privacidad
+                    </label>
+                    <div id="errorAcepto" class="error"></div>
+                </fieldset>
+
+                <button type="submit" class="rounded bg-primary text-white border-white">Enviar</button>
+                <button type="reset" class="rounded bg-primary text-white border-white">Resetear</button>
+            </form>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="bg-primary">
+        <div class="pie">
+            <a href="https://facebook.com" target="_blank" class="redes">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="redes">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="redes">
+                <img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" alt="Instagram">
+            </a>
+            <p class="adress">Calle Ejemplo 123, Valencia, España</p>
+            <a href="#" class="alinks">Aviso Legal</a>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/script1.js"></script>
+</body>
+</html>

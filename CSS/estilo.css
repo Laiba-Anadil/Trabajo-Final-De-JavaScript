@@ -1,0 +1,123 @@
+/*CUERPO*/
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*INDEX HTML*/
+/*NAVBAR*/
+.alinks{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+.alinks:hover{
+    background-color: #99f0f0;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.alinks.activo{
+    color: yellow;
+}
+
+/*carousel*/
+.carousel-item, .cimg{
+    height: 400px;
+    border-radius: 500px;
+}
+
+/*MAIN*/
+main{
+    background-color: #aef0f0;
+}
+.grid:hover{
+    transform: translateY(-10px);
+    opacity: 1;
+    cursor: pointer;
+}
+.noticia {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+.redes{
+    margin: 0 20px;
+}
+.adress{
+    margin: 20px 0;
+}
+
+
+
+
+/*PRODUCTOS HTML*/
+.grid{
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+}
+
+
+
+/*PRESUPUESTO HTML*/
+fieldset {
+   margin-top: 15px;
+   padding: 10px;
+}
+legend {
+    font-weight: bold;
+    color: #007BFF;
+}
+label{
+    text-transform: uppercase;
+}
+input{
+    margin-top: 10px;
+    box-sizing: border-box;    
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+.extras{
+    margin-left: 40px;
+}
+.error {
+   color: red;
+   font-size: 0.9em;
+}
+#presupuestoFinal {
+   font-weight: bold;
+   font-size: 1.2em;
+   margin-top: 15px;
+}
+button {
+   margin: 15px;
+   padding: 10px 15px;
+}
+.valido{
+    border-color: green;
+}
+.invalido{
+    border-color: red;
+}
+
+
+
+/*CONTACTO HTML*/
+#map{
+    height: 400px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+}

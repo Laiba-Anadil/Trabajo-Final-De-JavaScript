@@ -1,0 +1,24 @@
+{
+  "noticias": [
+    {
+      "titulo": "Detección de melanoma con IA en hospitales de Málaga:",
+      "contenido": "Un estudio conjunto con L’Oréal utiliza inteligencia artificial en móviles para detectar melanomas a partir de fotos. Participan más de 500 personas hasta octubre de 2025."
+    },
+    {
+      "titulo": "TomTom recorta 300 empleos para centrarse en IA:",
+      "contenido": "La empresa tecnológica redefine su estrategia y elimina 300 puestos de trabajo para invertir en inteligencia artificial y nuevos productos digitales."
+    },
+    {
+      "titulo": "Siemens incorpora a un experto en IA de Amazon:",
+      "contenido": "Vasi Philomin se une a Siemens para liderar proyectos de inteligencia artificial, incluyendo un copiloto industrial basado en IA generativa."
+    },
+    {
+      "titulo": "Apple quiere comprar Perplexity AI para mejorar Siri:",
+      "contenido": "Apple planea adquirir la startup Perplexity AI para incorporar sus capacidades de búsqueda conversacional y potenciar el rendimiento de Siri."
+    },
+    {
+      "titulo": "La UE impulsa ‘gigafactorías’ de IA con 20.000 millones de euros:",
+      "contenido": "La Unión Europea ha recibido 76 propuestas para construir centros de computación con chips de IA, impulsando el desarrollo tecnológico en el continente."
+    }
+  ]
+}
