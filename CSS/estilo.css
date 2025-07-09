@@ -26,7 +26,6 @@ body{
 /*carousel*/
 .carousel-item, .cimg{
     height: 400px;
-    width: 900px;
     border-radius: 500px;
 }
 
